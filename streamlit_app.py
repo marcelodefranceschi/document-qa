@@ -35,7 +35,7 @@ else:
 
         # Process the uploaded file and question.
         # document = uploaded_file.read().decode()
-        document = StringIO(uploaded_file.read().decode("utf-8"))
+        document = StringIO(uploaded_file.read().decode())
         messages = [
             {
                 "role": "user",
